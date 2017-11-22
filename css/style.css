@@ -1,0 +1,489 @@
+/* Backround Wallpaper CSS */
+
+.background {background-image:  url('../img/background_image.jpeg'); background-size: cover; background-repeat: repeat-x; background-position: top; background-attachment: fixed}
+
+/* Page Layout Boxes */
+
+      
+    /* Top Section */ 
+
+#HeaderBox {height: 300px;}
+    
+.TextId1 {color: #224884; font-family: 'Tangerine', serif; font-size: 80px; text-shadow: 4px 4px 4px #aaa; text-align: center; margin: 20px 20px 20px 20px;}
+
+.TextId2a {color: #224884; font-family: 'Tangerine', sans-serif; font-size: 300%; text-shadow: 5px 5px 5px #aaa; text-align: center;}
+.TextId2b {color: #224884; font-family: 'Tangerine', sans-serif; font-size: 300%; text-shadow: 5px 5px 5px #aaa; text-align: center;}
+
+    /* Menu Bar */ 
+
+.SpaceBox {display: flex; justify-content: space-between; border-style: solid; height: 60px; border-color: #976038;}
+
+
+/*.TBox2 {flex-direction: row; margin: 10px 10px; border-style: inset; width: 250px;  height: 30px; border-color: #976038; font-family: 'Tangerine', serif; font-size: 200%; text-shadow: 5px 5px 5px #aaa; text-align:center;} */
+
+.TextId3 {color: #224884; font-family: 'Tangerine', serif; font-size: 40px; text-shadow: 2px 2px 2px #aaa; margin: 10px 10px; text-decoration: none;}
+
+
+.subscribe {margin: 10px 20px 10px 10px;}
+
+    /* Middle Section - 1 */
+
+#MiddleBox1 {display: flex; flex-wrap: wrap; justify-content: space-around; border-style: solid; height: 700px; border-color: #000000;}
+
+.MBox1 {float: left; margin: 20px 20px 20px 20px; border-style: inset; width: 600px;  height: 650px; border-color: 	#976038;} 
+
+.MBox2 {display: flex; flex-wrap: wrap; flex-direction: row; justify-content: center; margin: 20px 20px 20px 20px; border-style: inset; width: 600px;  height: 650px; border-color: 	#976038;} 
+
+.MBox3 {margin: 20px 20px 20px 20px; border-style: inset; width: 200px;  height: 170px; border-color: 	#976038;} 
+
+.image_position {height: 170px; width: 200px;}
+
+.TextId4 {color: #224884; font-family: 'Tangerine', sans-serif; font-size: 200%; text-shadow: 10px 10px 10px #aaa;}
+
+
+
+
+    /* Middle Section - 2 
+
+#MiddleBox2 {display: flex; justify-content: center; border-style: solid; height: 275px; border-color: #000000;}
+
+.MBox2 {flex-direction: row; margin: 20px 20px 20px 20px; border-style: inset; width: 220px;  height: 220px; border-color: 	#976038;} 
+    
+
+    */
+
+/* Bottom Section */
+    
+#BottomBox {display: flex; flex-direction: row; border-style: solid; height: 150px; border-color: #000000; background-color: #D3D3D3;}
+
+.BoxinBottomBox {margin: 20px 20px 20px 20px;  border-style: solid; width: 220px;  height: 30px; border-color: #000000; background-color: #ffffff;}
+
+.Box2 {flex-direction: column; margin: 20px 20px 20px 20px;  border-style: solid; width: 220px;  height: 30px; border-color: #000000; background-color: #ffffff;}
+
+.FooterBox {display: flex; flex-direction: column;  justify-content: flex-start; color: #224884; font-family: 'Tangerine', sans-serif; font-size: 200%; text-shadow: 10px 10px 10px #aaa; border-style: solid; height: 300px; border-color: #000000;}
+
+*{
+    padding: 0;
+    margin: 0;
+    color: #FFF;
+}
+
+body{
+    background-color: #ededed;
+}
+
+.container{
+    overflow: hidden;
+    z-index: 10;
+    position: relative;
+    margin: 150px auto;
+    height: 90px;
+    width: 300px;
+    background-color: #F17022;
+    border-radius: 10px;
+    box-shadow: 2px 2px 1px rgba(0,0,0,0.2);
+}
+
+
+/*  BACKGROUND  */
+
+.Circle1{
+    z-index: 100;
+    position: absolute;
+    height: 80px;
+    width: 80px;
+    right: -20px;
+    top: -30px;
+    border-radius: 50%;
+    background-color: rgba(253,184,19,1);
+    animation: enlarge;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+}
+
+.Circle2{
+    z-index: 80;
+    position: absolute;
+    height: 150px;
+    width: 150px;
+    right: -50px;
+    top: -70px;
+    border-radius: 50%;
+    background-color: rgba(246,140,31,0.7);
+    
+    animation: enlarge;
+    animation-duration: 7s;
+    animation-iteration-count: infinite;
+}
+
+.Circle3{
+    z-index: 50;
+    position: absolute;
+    height: 200px;
+    width: 200px;
+    right: -50px;
+    top: -100px;
+    border-radius: 50%;
+    background-color: rgba(241,125,45,0.7);
+    
+    animation: enlarge;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
+}
+
+
+
+/*  CONTENT  */
+
+.sun{
+    z-index: 1000;
+    font-size: 15px !important;
+}
+
+.Condition{
+    z-index: 1000;
+    position: absolute;
+    font-family: "Roboto", sans-serif;
+    font-weight: 100;
+    font-size: 20px;
+    left: 20px;  
+    top: 10px;
+}
+
+.Temp{
+    z-index: 1000;
+    position: absolute;
+    font-family: "Roboto", sans-serif;
+    font-size: 35px;
+    font-weight: 400;
+    left: 20px;
+    bottom: 5px;
+}
+
+#F{
+    z-index: 1000;
+    font-family: "Roboto",sans-serif;
+    font-weight: 100;
+    font-size: 30px;
+}
+
+
+.Time{
+    z-index: 1000;
+    position: absolute;
+    font-family: "Noto Sans", sans-serif;
+    font-size: 18px;
+    font-weight: 200;
+    right: 20px;
+    top: 10px;
+}
+
+.locationIcon{
+    z-index: 1000;
+    font-size: 10px !important;
+}
+
+.Location{
+    z-index: 1000;
+    position: absolute;
+    font-family: "Noto Sans", sans-serif;
+    font-size: 12px;
+    font-weight: 200;
+    right: 20px;
+    bottom: 15px;
+}
+
+@keyframes enlarge{
+    50%{
+        transform: scale(1.2);
+    }
+}
+
+/* RoomsBelow */
+.parentRooms {
+    width: 1200px;
+	height: 185px;
+	display: flex;
+	flex-wrap: wrap;
+}
+
+.headerBoxRooms {
+    width: 1200px;
+    height: 185px;
+    background-image: url("../img/background_image.jpeg");
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.headerRooms1 {
+	color: #224884;
+	font-family: 'Tangerine', serif;
+	font-size: 80px;
+	text-shadow: 4px 4px 4px #aaa;
+	text-align: center;
+	margin: 20px 20px 20px 20px;
+}
+
+.menuBoxRooms {
+    display: flex;
+	justify-content: space-around;
+	border-style: solid;
+    width: 1185px;
+	height: 60px;
+	border-color: #976038;
+    padding: 3px 5px 6px 7px; 
+}
+
+.menuItemsRooms {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+.menuButtonRooms {
+    display: inline;
+    color: #224884;
+	font-family: 'Tangerine', serif;
+	font-size: 45px;
+	text-shadow: 4px 4px 4px #aaa;
+	text-align: center;
+	padding: 30px 70px 6px 10px;
+}
+
+.roomChoices {
+    background-color: rgba(201, 217, 241, 0.7);
+    width: 1200px;
+    height: 700px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.villas {
+    width: 250px;
+    height: 300px;
+}
+
+.roomTitle {
+    font-family: 'Tangerine', serif;
+	font-size: 45px;
+    color: #224884;
+}
+
+.villaDescript {
+    font-family: 'Tangerine', serif;
+	font-size: 45px;
+    color: #224884;
+}
+
+/* RESTAURANT */
+
+.NamesRectangle
+{
+    display: flex;
+	justify-content: space-around;
+	border-style: dotted; 
+    width: 1200px;
+	height: 60px;
+}
+
+.restrnt
+{
+    display: flex;
+    justify-content: space-around;
+    border-style: dotted;
+    width: 750px;
+    height: 60px;
+    display: inline;
+    text-shadow: 4px 4px 4px #aaa;
+	text-align: center;
+}
+
+#restname
+{
+    font-family: 'Tangerine', serif;
+	font-size: 55px;
+    color: #224884; 
+}
+
+.bar
+{
+    display: flex;
+    justify-content: space-around;
+    text-align: center;
+    align-items: flex-end;
+    border-style: dotted;
+    width: 450px;
+    height: 60px;
+    display: inline;
+    text-shadow: 4px 4px 4px #aaa;
+	text-align: center;
+}
+
+#barname
+{
+    font-family: 'Tangerine', serif;
+	font-size: 55px;
+    color: #224884;
+}
+
+.PicsRectangle
+{
+    display: flex;
+    border-style: dashed; 
+    width: 1200px;
+    height: 600px;
+}
+
+#Food
+{
+    border-style: double;
+    width: 750px;
+    height: 600px;
+}
+
+#Drink
+{
+    border-style: double;
+    width: 450px;
+    height: 600px;
+}
+
+.BottomRectangle
+{
+    display: flex;
+    display: block;
+    justify-content: space-around;
+    align-items: center;
+    border-style: solid;
+    border-color: #976038;
+    width: 1200px;
+    height: 180px; 
+    font-family: 'Tangerine', sans-serif; 
+    font-size: 200%;
+    color: #224884;
+    text-shadow: 10px 10px 10px #aaa; 
+    background-color: #D3D3D3;
+}
+
+.MealChoices
+{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 1200px;
+    height: 100px;
+    background-color: #D3D3D3;
+}
+
+#BoxBfast
+{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 170px;
+    height: 55px;
+    border-style: solid;
+    border-color: #976038;
+    font-family: 'Tangerine', serif; 
+    
+}
+
+#BoxLunch
+{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 170px;
+    height: 55px;
+    border-style: solid;
+    border-color: #976038;
+}
+
+#BoxDinner
+{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 170px;
+    height: 55px;
+    border-style: solid;
+    border-color: #976038;
+}
+
+#BoxBar
+{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 170px;
+    height: 55px;
+    border-style: solid;
+    border-color: #976038;
+}
+
+.ReserveRestaurant
+{
+    display: flex;
+    display: block;
+    justify-content: space-around;
+    width: 1200px;
+    height: 50px;
+    display: inline;
+	font-family: 'Tangerine', serif;
+	font-size: 25px;
+    color: #224884;
+    background-color: #D3D3D3;
+}
+
+.ReserveOptions
+{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 1200px;
+    height: 50px;
+    background-color: #D3D3D3; 
+}
+
+#reserve
+{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 400px;
+    height: 50px;
+    display: inline;
+	font-family: 'Tangerine', serif;
+	font-size: 25px;
+    color: #224884;
+    background-color: #D3D3D3;
+}
+
+#web
+{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 400px;
+    height: 50px;
+    display: inline;
+	font-family: 'Tangerine', serif;
+	font-size: 20px;
+    color: #224884;
+    background-color: #D3D3D3; 
+}
+
+#phone
+{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 400px;
+    height: 50px;
+    display: inline;
+	font-family: 'Tangerine', serif;
+	font-size: 20px;
+    color: #224884;
+    background-color: #D3D3D3;
+}
