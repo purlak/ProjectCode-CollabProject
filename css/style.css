@@ -1,56 +1,182 @@
 /* Backround Wallpaper CSS */
 
-.background {background-image:  url('../img/background_image.jpeg'); background-size: cover; background-repeat: repeat-x; background-position: top; background-attachment: fixed}
+.background-new {background-image:  url('../img/background_image.jpeg'); background-size: cover; background-repeat: repeat-x; background-position: top; background-attachment: fixed}
 
 /* Page Layout Boxes */
 
       
     /* Top Section */ 
 
-#HeaderBox {height: 300px;}
+.HeaderBox {display: flex; flex-direction: column; flex-wrap: none; height: 300px;}
+
+.HeaderBox_rooms {background-image:  url('../img/background_image.jpeg'); background-size: cover; background-repeat: repeat-x; background-position: top; background-attachment: fixed; display: flex; flex-direction: column; flex-wrap: none; height: 300px;}
     
 .TextId1 {color: #224884; font-family: 'Tangerine', serif; font-size: 80px; text-shadow: 4px 4px 4px #aaa; text-align: center; margin: 20px 20px 20px 20px;}
-
 .TextId2a {color: #224884; font-family: 'Tangerine', sans-serif; font-size: 300%; text-shadow: 5px 5px 5px #aaa; text-align: center;}
 .TextId2b {color: #224884; font-family: 'Tangerine', sans-serif; font-size: 300%; text-shadow: 5px 5px 5px #aaa; text-align: center;}
-
+.x {float: center;}
     /* Menu Bar */ 
 
-.SpaceBox {display: flex; justify-content: space-between; border-style: solid; height: 60px; border-color: #976038;}
+.SpaceBox {display: flex; justify-content: space-between; border-top-style: solid; border-bottom-style: solid;  height: 100px; border-color: #224884;}
 
-
-/*.TBox2 {flex-direction: row; margin: 10px 10px; border-style: inset; width: 250px;  height: 30px; border-color: #976038; font-family: 'Tangerine', serif; font-size: 200%; text-shadow: 5px 5px 5px #aaa; text-align:center;} */
+.TBox2 {flex-direction: row; padding: 20px; margin: 10px 10px; width: 250px;  height: 30px;  font-family: 'Tangerine', serif; font-size: 200%; text-shadow: 5px 5px 5px #aaa; text-align:center;} 
 
 .TextId3 {color: #224884; font-family: 'Tangerine', serif; font-size: 40px; text-shadow: 2px 2px 2px #aaa; margin: 10px 10px; text-decoration: none;}
 
-
 .subscribe {margin: 10px 20px 10px 10px;}
+
+
+.SpaceBox1 {display: flex; justify-content: space-around; font-size: 10em; padding: 15px; height: 50px;}
+
+
+/* Social Media CSS - from www.joevengels.de */
+
+.icon-button {
+  background-color: black;
+  border-radius: 2.6rem;
+  cursor: pointer;
+  display: inline-block;
+  font-size: 1.3rem;
+  height: 2.6rem;
+  line-height: 2.6rem;
+  margin: 0 5px;
+  position: relative;
+  text-align: center;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+  width: 2.6rem;
+}
+
+
+/* Icons */
+.icon-button i {
+  background: none;
+  color: white;
+  height: 2.6rem;
+  left: 0;
+  line-height: 2.6rem;
+  position: absolute;
+  top: 0;
+  -webkit-transition: all 0.3s;
+     -moz-transition: all 0.3s;
+       -o-transition: all 0.3s;
+          transition: all 0.3s;
+  width: 2.6rem;
+  z-index: 10;
+}
+
+
+
+
+
+.twitter span {
+  background-color: #4099ff;
+}
+.facebook span {
+  background-color: #3B5998;
+}
+.google-plus span {
+  background-color: #db5a3c;
+}
+.tumblr span {
+  background-color: #34526f;
+}
+.instagram span {
+  background-color: #517fa4;
+}
+.youtube span {
+  background-color: #bb0000;
+}
+.pinterest span {
+  background-color: #cb2027;
+}
+
+
+
+.icon-button .icon-twitter {
+  color: #4099ff;
+}
+.icon-button .icon-facebook {
+  color: #3B5998;
+}
+.icon-button .fa-tumblr {
+  color: #34526f;
+}
+.icon-button .icon-google-plus {
+  color: #db5a3c;
+}
+.icon-button .fa-instagram {
+  color: #517fa4;
+}
+.icon-button .fa-youtube {
+  color: #bb0000;
+}
+.icon-button .fa-pinterest {
+  color: #cb2027;
+}
+
+
+
+
+.icon-button:hover .icon-twitter,
+.icon-button:hover .icon-facebook,
+.icon-button:hover .icon-google-plus,
+.icon-button:hover .fa-tumblr,
+.icon-button:hover .fa-instagram,
+.icon-button:hover .fa-youtube,
+.icon-button:hover .fa-pinterest {
+  color: white;
+}
+
+@media all and (max-width: 680px) {
+  .icon-button {
+    border-radius: 1.6rem;
+    font-size: 0.8rem;
+    height: 1.6rem;
+    line-height: 1.6rem;
+    width: 1.6rem;
+  }
+
+  .icon-button:hover span {
+    width: 1.6rem;
+    height: 1.6rem;
+    border-radius: 1.6rem;
+    margin: -0.8rem;
+  }
+
+  /* Icons */
+  .icon-button i {
+    height: 1.6rem;
+    line-height: 1.6rem;
+    width: 1.6rem;
+  }
+  body {
+
+    padding: 10px;
+  }
+  .pinterest {
+   display: none; 
+  }
+
+}
+
 
     /* Middle Section - 1 */
 
-#MiddleBox1 {display: flex; flex-wrap: wrap; justify-content: space-around; border-style: solid; height: 700px; border-color: #000000;}
+#MiddleBox1 {display: flex; flex-wrap: wrap; justify-content: space-around; border-bottom-style: solid; height: 800px; border-color: #224884;}
 
-.MBox1 {float: left; margin: 20px 20px 20px 20px; border-style: inset; width: 600px;  height: 650px; border-color: 	#976038;} 
+.MBox1 {width: 700px;  height: 800px;} 
 
-.MBox2 {display: flex; flex-wrap: wrap; flex-direction: row; justify-content: center; margin: 20px 20px 20px 20px; border-style: inset; width: 600px;  height: 650px; border-color: 	#976038;} 
+.MBox2 {display: flex; flex-wrap: wrap; justify-content: center;  width: 700px;  height: 800px;} 
 
-.MBox3 {margin: 20px 20px 20px 20px; border-style: inset; width: 200px;  height: 170px; border-color: 	#976038;} 
+.MBox3 {margin: 20px 20px 20px 20px; width: 300px;  height: 200px;} 
 
-.image_position {height: 170px; width: 200px;}
+.image_position {height: 200px; width: 300px;}
 
-.TextId4 {color: #224884; font-family: 'Tangerine', sans-serif; font-size: 200%; text-shadow: 10px 10px 10px #aaa;}
+.TextId4 {color: #224884; font-family: 'Tangerine', sans-serif; font-size: 210%; text-shadow: 10px 10px 10px #aaa;}
 
-
-
-
-    /* Middle Section - 2 
-
-#MiddleBox2 {display: flex; justify-content: center; border-style: solid; height: 275px; border-color: #000000;}
-
-.MBox2 {flex-direction: row; margin: 20px 20px 20px 20px; border-style: inset; width: 220px;  height: 220px; border-color: 	#976038;} 
-    
-
-    */
 
 /* Bottom Section */
     
@@ -60,7 +186,10 @@
 
 .Box2 {flex-direction: column; margin: 20px 20px 20px 20px;  border-style: solid; width: 220px;  height: 30px; border-color: #000000; background-color: #ffffff;}
 
-.FooterBox {display: flex; flex-direction: column;  justify-content: flex-start; color: #224884; font-family: 'Tangerine', sans-serif; font-size: 200%; text-shadow: 10px 10px 10px #aaa; border-style: solid; height: 300px; border-color: #000000;}
+.FooterBox {height: 300px; }
+
+.TextId6 {text-align: center; color: #224884; font-family: 'Tangerine', sans-serif; font-size: 200%; text-shadow: 10px 10px 10px #aaa;}
+
 
 *{
     padding: 0;
@@ -200,15 +329,18 @@ body{
 }
 
 /* RoomsBelow */
+
+.background_rooms {background-color: rgba(201, 217, 241, 0.7);}
+
 .parentRooms {
-    width: 1200px;
+    
 	height: 185px;
 	display: flex;
 	flex-wrap: wrap;
 }
 
 .headerBoxRooms {
-    width: 1200px;
+    
     height: 185px;
     background-image: url("../img/background_image.jpeg");
     display: flex;
@@ -253,7 +385,7 @@ body{
 
 .roomChoices {
     background-color: rgba(201, 217, 241, 0.7);
-    width: 1200px;
+    
     height: 700px;
     display: flex;
     flex-wrap: wrap;
@@ -274,6 +406,7 @@ body{
     font-family: 'Tangerine', serif;
 	font-size: 45px;
     color: #224884;
+    padding-top: 20px;
 }
 
 /* RESTAURANT */
@@ -282,17 +415,16 @@ body{
 {
     display: flex;
 	justify-content: space-around;
-	border-style: dotted; 
-    width: 1200px;
 	height: 60px;
+	padding-top: 20px;
 }
 
 .restrnt
 {
     display: flex;
     justify-content: space-around;
-    border-style: dotted;
-    width: 750px;
+    
+    
     height: 60px;
     display: inline;
     text-shadow: 4px 4px 4px #aaa;
@@ -304,6 +436,7 @@ body{
     font-family: 'Tangerine', serif;
 	font-size: 55px;
     color: #224884; 
+    
 }
 
 .bar
@@ -312,7 +445,7 @@ body{
     justify-content: space-around;
     text-align: center;
     align-items: flex-end;
-    border-style: dotted;
+    
     width: 450px;
     height: 60px;
     display: inline;
@@ -330,23 +463,29 @@ body{
 .PicsRectangle
 {
     display: flex;
-    border-style: dashed; 
-    width: 1200px;
-    height: 600px;
+    justify-content: center;
+    height: 1000px;
 }
 
 #Food
 {
-    border-style: double;
+    display: flex;
+   flex-direction: column;
+   justify-content: center;
+   
+    
+    border-color: #224884;
     width: 750px;
-    height: 600px;
+    height: 1000px;
 }
 
 #Drink
 {
-    border-style: double;
+    display: flex;
+   flex-direction: column;
+   justify-content: center;
     width: 450px;
-    height: 600px;
+    height: 1000px;
 }
 
 .BottomRectangle
@@ -355,15 +494,16 @@ body{
     display: block;
     justify-content: space-around;
     align-items: center;
-    border-style: solid;
-    border-color: #976038;
-    width: 1200px;
-    height: 180px; 
+    border-top-style: solid;
+    border-bottom-style: solid;
+    border-color: #224884;
+    
+    height: 220px; 
     font-family: 'Tangerine', sans-serif; 
     font-size: 200%;
     color: #224884;
     text-shadow: 10px 10px 10px #aaa; 
-    background-color: #D3D3D3;
+    
 }
 
 .MealChoices
@@ -371,9 +511,8 @@ body{
     display: flex;
     justify-content: space-around;
     align-items: center;
-    width: 1200px;
     height: 100px;
-    background-color: #D3D3D3;
+    
 }
 
 #BoxBfast
@@ -383,8 +522,8 @@ body{
     align-items: center;
     width: 170px;
     height: 55px;
-    border-style: solid;
-    border-color: #976038;
+    border-bottom-style: solid;
+    border-color: #224884;
     font-family: 'Tangerine', serif; 
     
 }
@@ -396,8 +535,8 @@ body{
     align-items: center;
     width: 170px;
     height: 55px;
-    border-style: solid;
-    border-color: #976038;
+    border-bottom-style: solid;
+    border-color: #224884;
 }
 
 #BoxDinner
@@ -407,8 +546,8 @@ body{
     align-items: center;
     width: 170px;
     height: 55px;
-    border-style: solid;
-    border-color: #976038;
+    border-bottom-style: solid;
+    border-color: #224884;
 }
 
 #BoxBar
@@ -418,22 +557,20 @@ body{
     align-items: center;
     width: 170px;
     height: 55px;
-    border-style: solid;
-    border-color: #976038;
+    border-bottom-style: solid;
+    border-color: #224884;
 }
 
 .ReserveRestaurant
 {
-    display: flex;
-    display: block;
-    justify-content: space-around;
+    text-align: center;
     width: 1200px;
     height: 50px;
     display: inline;
 	font-family: 'Tangerine', serif;
 	font-size: 25px;
     color: #224884;
-    background-color: #D3D3D3;
+    
 }
 
 .ReserveOptions
@@ -443,7 +580,7 @@ body{
     align-items: center;
     width: 1200px;
     height: 50px;
-    background-color: #D3D3D3; 
+    
 }
 
 #reserve
@@ -457,7 +594,7 @@ body{
 	font-family: 'Tangerine', serif;
 	font-size: 25px;
     color: #224884;
-    background-color: #D3D3D3;
+    
 }
 
 #web
@@ -471,7 +608,7 @@ body{
 	font-family: 'Tangerine', serif;
 	font-size: 20px;
     color: #224884;
-    background-color: #D3D3D3; 
+    
 }
 
 #phone
@@ -485,5 +622,11 @@ body{
 	font-family: 'Tangerine', serif;
 	font-size: 20px;
     color: #224884;
-    background-color: #D3D3D3;
+    
 }
+
+.y {color: #224884;}
+
+.MBox4 {margin: 20px 20px 20px 20px; width: 400px;  height: 280px; float: center;} 
+
+.image_position1 {height: 280px; width: 400px;}
